@@ -7,12 +7,12 @@ Como usar:
 
 Tenha a variável LANG devidamente configurada ex:
 
-  export LANG=pt_BR
+    export LANG=pt_BR
 
 Execução:
-  python3 hello.py
-  ou
-  ./hello.py
+    python3 hello.py
+    ou
+    ./hello.py
 """
 __version__ = "0.0.1"
 __author__ = "Cláudio"
@@ -25,12 +25,12 @@ current_language = os.getenv("LANG", "en_US")[:5]
 message = "Hello, World!"
 
 if current_language == "pt_BR":
-  message = "Olá, Mundo!"
+    message = "Olá, Mundo!"
 elif current_language == "it_IT":
-  message = "Ciao, Mondo!"
+    message = "Ciao, Mondo!"
 elif current_language == "es_SP":
-  message = "Hola, Mundo!"
+    message = "Hola, Mundo!"
 elif current_language == "fr_FR":
-  message = "Bonjour, Mondo!"
+    message = "Bonjour, Mondo!"
 
 print(message)
